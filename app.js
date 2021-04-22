@@ -27,9 +27,7 @@ const pool = new Pool({
   port: 5433,
 })
 
-var port = process.env.PORT || 8080,
-    http = require('http'),
-    fs = require('fs');
+var port = process.env.PORT || 80;
 const maxTables = 9;
 
 // Configuring body parser middleware
