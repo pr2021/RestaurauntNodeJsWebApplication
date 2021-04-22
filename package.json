@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "mocha --recursive tests --exit",
-    "start": "node app.js"
+    "start": "npm start"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
