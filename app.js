@@ -27,8 +27,11 @@ const pool = new Pool({
   port: 5433,
 })
 
-var port = process.env.PORT || 80;
+
 const maxTables = 9;
+var port = process.env.PORT || 3000,
+    http = require('http'),
+    fs = require('fs');
 
 // Configuring body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -183,7 +186,6 @@ pool.query('SELECT "User", "Email", "Phone", "noOfPeople", "Preference", "Date",
   }
   
 })*/
-
 
 app.listen(port, function() {
   console.log('Server running at http://127.0.0.1:%s', port);
