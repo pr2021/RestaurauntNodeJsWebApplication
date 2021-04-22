@@ -27,7 +27,7 @@ const pool = new Pool({
   port: 5433,
 })
 
-var port = process.env.PORT || 3000,
+var port = process.env.PORT || 8080,
     http = require('http'),
     fs = require('fs');
 const maxTables = 9;
