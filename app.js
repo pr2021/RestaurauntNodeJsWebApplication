@@ -187,6 +187,6 @@ pool.query('SELECT "User", "Email", "Phone", "noOfPeople", "Preference", "Date",
   
 })*/
 
-app.listen(port, function() {
-  console.log('Server running at http://127.0.0.1:%s', port);
-});
+app.listen(port, '0.0.0.0');
+
+module.exports = app;
